@@ -11,13 +11,23 @@
     <main>
         <section id="login">
             <div id="img">
-            
+            <h1>Bem vindo de volta!</h1>
+            <p>Não tem uma conta? <br>
+            <a href="#">Registrar</a></p>
             </div>
             <div id="form">
                 <h1>Login</h1>
-                <form action="login.php" method="post">
-                    <input type="email" name="Email" id="iemail">
-                    <input type="password" name="Senha" id="ipass">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div>
+                        <div class="label" ><label for="ilogin">Email</label></div>
+                        <input type="email" name="email" id="iemail" placeholder="    E-mail" autocomplete="email" required>
+                    </div>
+                    <div>
+                        <div class="label" ><label for="isenha">Senha</label></div>
+                        <input type="password" name="senha" id="isenha" placeholder="    Senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a class="senha" href="#">Esqueceu a senha?</a>
                 </form>
             </div>
         </section>

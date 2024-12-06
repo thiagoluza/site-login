@@ -2,15 +2,105 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     section#login {
-        width: 90vw;
-
+        width: 750px;
     }
-    
+ 
     div#img {
         display: block;
         float: left;
-        width: 45%;
+        width: 50%;
+        height: 100%;
+    } 
+
+    section#login > div#form {
+        float: right;
+        width: 50%;
+    }
+
+    div#img > h1 {
+        padding-top: 25px;
+        font-size: 1.7em;
+        color: white;
+        text-align: center;
+    }
+
+    p {
+        line-height: 40px;
+        text-align: center;
+        padding-top: 85%;
+        color: white;
+    }
+
+    p > a {
+        border-radius: 40px;
+        color: black;
+        background-color: white;
+        padding: 10px;
+        text-decoration: none;
+        transition-duration: 0.3s;
+    }
+
+    p > a:hover {
+        background-color: rgb(1, 83, 1);
+        color: white;
+    }
+
+}
+     
+@media screen and (min-width:992px) {
+    section#login {
+        width: 990px;
+        float: left;
+    }
+
+    section#login > div#form {
+        float: right;
+        width: 50%;
+    }
+
+    div#img {
+        display: block;
+        float: right;
+        width: 50%;
         height: 100%;
     }
 
+    div#img > h1 {
+        font-size: 2.5em;
+        color: white;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    p {
+        line-height: 40px;
+        text-align: center;
+        padding-top: 62%;
+        color: white;
+    }
+
+    p > a {
+        border-radius: 40px;
+        color: black;
+        background-color: white;
+        padding: 10px;
+        text-decoration: none;
+        transition-duration: 0.3s;
+    }
+
+    p > a:hover {
+        background-color: rgb(1, 83, 1);
+        color: white;
+    }
+
+    .label {
+        padding-top: 5px;
+        padding-left: 30px;
+    }
+
+    input {
+        margin: 10px auto;
+        display: block;
+        width: 90%;
+    }
 }
