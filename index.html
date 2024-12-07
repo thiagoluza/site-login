@@ -12,23 +12,29 @@
         <section id="login">
             <div id="img">
             <h1>Bem vindo de volta!</h1>
-            <p>Não tem uma conta? <br>
-            <a href="#">Registrar</a></p>
             </div>
             <div id="form">
                 <h1>Login</h1>
                 <form action="login.php" method="post" autocomplete="on">
                     <div>
                         <div class="label" ><label for="ilogin">Email</label></div>
-                        <input type="email" name="email" id="iemail" placeholder="    E-mail" autocomplete="email" required>
+                        <input type="email" name="email" id="iemail" placeholder="E-mail" autocomplete="email" required>
                     </div>
                     <div>
                         <div class="label" ><label for="isenha">Senha</label></div>
-                        <input type="password" name="senha" id="isenha" placeholder="    Senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="20">
                     </div>
                     <input type="submit" value="Entrar">
                     <a class="senha" href="#">Esqueceu a senha?</a>
                 </form>
+                <p style="padding: 0px;" >ou</p>
+                <div class="icon">
+                    <a href=""><img class="logo" src="Imagens/logo-google.png" alt="google"></a>
+                    <a href=""><img class="logo" src="Imagens/logo-facebook.jpg" alt="facebook"></a>
+                    <a href=""><img class="logo" src="Imagens/logo-github.jpg" alt="github"></a>
+                </div>
+                <p style="padding: 0px;" >Não tem uma conta? <br>
+                    <a href="#">Registrar</a></p>
             </div>
         </section>
     </main>

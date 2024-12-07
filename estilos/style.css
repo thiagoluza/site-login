@@ -58,7 +58,7 @@ section#login > div#form {
 
 h1 {
     font-size: 1.7em;
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -68,11 +68,13 @@ h1 {
 }
 
 .label {
-    padding-top: 15px;
+    font-weight: bold;
+    padding-top: 8px;
     padding-left: 10px;
 }
 
 input {
+    text-indent: 15px;
     border: 1px solid black;
     height: 40px;
     margin-top: 15px;
@@ -81,6 +83,9 @@ input {
 }
 
 input[type=submit] {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
     background-color: rgb(1, 83, 1);
     color: white;
     font-weight: bold;
@@ -95,10 +100,10 @@ input[type=submit]:hover {
 
 form > .senha {
     margin: auto;
-    padding: 10px 0px;
+    padding: 2px 0px;
     color: black;
     text-decoration: none;
-    font-size: 0.7em;
+    font-size: 0.9em;
     width: 50%;
     display: block;
     text-align: center;
@@ -106,4 +111,47 @@ form > .senha {
 
 form > .senha:hover {
     text-decoration: underline;
+}
+
+.icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    float: none;
+    display: block;
+    margin: 5px;
+    width: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.logo:hover {
+    width: 60px;
+    margin: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+}
+
+p {
+    padding-top: 25%;
+    font-size: 0.8em;
+    line-height: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+p > a {
+    font-weight: bold;
+    border-radius: 40px;
+    color: white;
+    background-color: rgb(1, 83, 1);
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+p > a:hover {
+    background-color: rgb(0, 59, 0);
 }
